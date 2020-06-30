@@ -33,6 +33,8 @@ class LoginController : AppCompatActivity() {
                 Response.Listener { response ->
                     Toast.makeText(this,"Bienvenido " + response.getJSONObject(0).getString("CLInombre"),
                         Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(this,"Bienvenido " + txtCorreo.text.toString() + " " + txtPassword.text.toString(),
+                        //Toast.LENGTH_SHORT).show()
                     ConexionModel.dniCliente = response.getJSONObject(0).getString("CLIdni")
                     ConexionModel.nombreCliente = response.getJSONObject(0).getString("CLInombre") + " " +
                             response.getJSONObject(0).getString("CLIapellido")

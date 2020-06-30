@@ -41,13 +41,14 @@
         <activity android:name=".Controller.ClienteController" />
         <activity android:name=".Controller.RegistroController" />
         <activity android:name=".Controller.UbicacionController" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
-        <activity android:name=".Controller.LoginController" />
+        <activity android:name=".Controller.LoginController" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".Controller.SplashController" >
 
         </activity>

@@ -47,7 +47,7 @@ class UbicacionController : AppCompatActivity(), OnMapReadyCallback, GoogleMap.O
         setContentView(R.layout.ubicacion_activity)
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         val mapFragment = supportFragmentManager
-            .findFragmentById(R.id.mapCliente) as SupportMapFragment
+            .findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
 
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
