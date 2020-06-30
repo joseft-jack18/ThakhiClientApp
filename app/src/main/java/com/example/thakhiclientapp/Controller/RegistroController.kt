@@ -33,16 +33,6 @@ class RegistroController : AppCompatActivity() {
                 //startActivityForResult(callCameraIntent, CAMERA_REQUEST_CODE)
             //}
         //}
-        btnmostrar.setOnClickListener{
-            if(btnmostrar.drawable == resources.getDrawable(R.drawable.mostrar)){
-                txtClave.inputType = InputType.TYPE_CLASS_TEXT
-                btnmostrar.drawable == resources.getDrawable(R.drawable.nomostrar)
-            }
-            if(btnmostrar.drawable == resources.getDrawable(R.drawable.nomostrar)){
-                txtClave.inputType = InputType.TYPE_TEXT_VARIATION_PASSWORD
-                btnmostrar.drawable == resources.getDrawable(R.drawable.mostrar)
-            }
-        }
 
         btnGuardar.setOnClickListener {
             if(txtDni.text.toString().equals("") || txtCelular.text.toString().equals("") || txtCorreo.text.toString().equals("") ||
