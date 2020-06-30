@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorFondoPrincipal">
+
+        <EditText
+            android:id="@+id/txtDni"
+            android:layout_width="210dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/formulario2"
+            android:hint="DNI"
+            android:paddingLeft="40dp"
+            android:textColor="#fff"
+            android:textColorHint="#DADADA"
+            app:layout_constraintBottom_toTopOf="@+id/txtNombre"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.223"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtApellido"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/formulario2"
+            android:hint="Apellidos"
+            android:paddingLeft="40dp"
+            android:textColor="#fff"
+            android:textColorHint="#DADADA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtCelular"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/formulario2"
+            android:hint="Nro celular"
+            android:paddingLeft="40dp"
+            android:textColor="#fff"
+            android:textColorHint="#DADADA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtCorreo"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="280dp"
+            android:background="@drawable/formulario2"
+            android:hint="Correo"
+            android:paddingLeft="40dp"
+            android:textColor="#fff"
+            android:textColorHint="#DADADA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtClave"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="340dp"
+            android:background="@drawable/formulario2"
+            android:hint="Clave"
+            android:inputType="textPassword"
+            android:paddingLeft="40dp"
+            android:textColor="#fff"
+            android:textColorHint="#DADADA"
+            app:layout_constraintEnd_toStartOf="@+id/txtConfirma"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtConfirma"
+            android:layout_width="160dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="340dp"
+            android:background="@drawable/formulario2"
+            android:hint="Confirmar Clave"
+            android:paddingLeft="20dp"
+            android:password="true"
+            android:textColor="#fff"
+            android:textColorHint="#DADADA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.816"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btnCargar"
+            android:layout_width="88dp"
+            android:layout_height="60dp"
+            android:background="#00574B"
+            android:text="Cargar Foto"
+            android:textColor="#dfd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.206"
+            app:layout_constraintStart_toEndOf="@+id/txtFoto"
+            app:layout_constraintTop_toBottomOf="@+id/txtConfirma">
+
+        </Button>
+
+        <EditText
+            android:id="@+id/txtFoto"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/formulario2"
+            android:hint="url foto"
+            android:paddingLeft="40dp"
+            android:textColor="#000"
+            android:textColorHint="#DADADA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.235"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/formulario2"
+            android:hint="Nombre"
+            android:paddingLeft="40dp"
+            android:textColor="#fff"
+            android:textColorHint="#DADADA"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/btnGuardar"
+            android:layout_width="250dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/txtPassword"
+            android:layout_marginBottom="36dp"
+            android:background="@drawable/btn_guardar"
+            app:layout_constraintBottom_toTopOf="@+id/desing"
+            app:layout_constraintCircleRadius="@android:dimen/app_icon_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+        </ImageButton>
+
+        <ImageView
+            android:id="@+id/desing"
+            android:layout_width="420dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_elipse"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_foto"
+            android:layout_width="145dp"
+            android:layout_height="138dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnGuardar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFoto"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

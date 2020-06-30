@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ThakhiClientApp</string>
+    <string name="Thakhi">Thakhi 2020</string>
+    <string name="login">Login</string>
+    <string name="title_activity_entregas">Map</string>
+    <string name="title_activity_ubicacion">Map</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
