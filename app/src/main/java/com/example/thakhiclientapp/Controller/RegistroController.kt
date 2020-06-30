@@ -3,9 +3,11 @@ package com.example.thakhiclientapp.Controller
 import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap
+import android.graphics.drawable.Drawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
+import android.text.InputType
 import android.widget.Toast
 
 import com.android.volley.Request
@@ -15,6 +17,7 @@ import com.android.volley.toolbox.Volley
 import com.example.thakhiclientapp.Models.ConexionModel
 
 import com.example.thakhiclientapp.R
+import com.google.android.material.drawable.DrawableUtils
 import kotlinx.android.synthetic.main.registro_activity.*
 
 class RegistroController : AppCompatActivity() {
@@ -30,6 +33,16 @@ class RegistroController : AppCompatActivity() {
                 //startActivityForResult(callCameraIntent, CAMERA_REQUEST_CODE)
             //}
         //}
+        btnmostrar.setOnClickListener{
+            if(btnmostrar.drawable == resources.getDrawable(R.drawable.mostrar)){
+                txtClave.inputType = InputType.TYPE_CLASS_TEXT
+                btnmostrar.drawable == resources.getDrawable(R.drawable.nomostrar)
+            }
+            if(btnmostrar.drawable == resources.getDrawable(R.drawable.nomostrar)){
+                txtClave.inputType = InputType.TYPE_TEXT_VARIATION_PASSWORD
+                btnmostrar.drawable == resources.getDrawable(R.drawable.mostrar)
+            }
+        }
 
         btnGuardar.setOnClickListener {
             if(txtDni.text.toString().equals("") || txtCelular.text.toString().equals("") || txtCorreo.text.toString().equals("") ||

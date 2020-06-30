@@ -18,6 +18,7 @@
             android:layout_height="60dp"
             android:layout_above="@+id/txtCelular"
             android:paddingLeft="30dp"
+            android:inputType="number"
             android:background="@drawable/formulario2"
             android:hint="DNI"
             android:textColor="#fff"
@@ -29,6 +30,7 @@
             android:layout_height="60dp"
             android:layout_above="@+id/txtCorreo"
             android:paddingLeft="30dp"
+            android:inputType="phone"
             android:background="@drawable/formulario2"
             android:hint="Nro celular"
             android:textColor="#fff"
@@ -42,12 +44,13 @@
             android:paddingLeft="30dp"
             android:background="@drawable/formulario2"
             android:hint="Correo"
+            android:inputType="textEmailAddress"
             android:textColor="#fff"
             android:textColorHint="#DADADA" />
 
         <EditText
             android:id="@+id/txtClave"
-            android:layout_width="160dp"
+            android:layout_width="200dp"
             android:layout_height="60dp"
             android:background="@drawable/formulario2"
             android:hint="Clave"
@@ -58,11 +61,12 @@
 
         <EditText
             android:id="@+id/txtConfirma"
-            android:layout_width="160dp"
+            android:layout_width="200dp"
             android:layout_height="60dp"
             android:paddingLeft="30dp"
             android:background="@drawable/formulario2"
             android:hint="Confirmar Clave"
+            android:inputType="textPassword"
             android:password="true"
             android:textColor="#fff"
             android:textColorHint="#DADADA" />
