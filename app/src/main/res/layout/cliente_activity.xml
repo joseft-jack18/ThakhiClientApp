@@ -6,39 +6,60 @@
     android:layout_height="match_parent"
     android:fillViewport="true">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorFondoPrincipal">
+        android:background="@color/white">
 
 
         <EditText
             android:id="@+id/txtCelularCliente"
             android:layout_width="310dp"
             android:layout_height="60dp"
-            android:layout_marginTop="60dp"
+            android:layout_above="@+id/txtCorreoCliente"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/formulario2"
             android:hint="Nro celular"
-            android:paddingLeft="40dp"
             android:inputType="phone"
-            android:textColor="#fff"
-            android:textColorHint="#DADADA"
+            android:paddingLeft="40dp"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorBackgroudText"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+
         </EditText>
 
         <EditText
             android:id="@+id/txtCorreoCliente"
             android:layout_width="310dp"
             android:layout_height="60dp"
+            android:layout_above="@+id/txtNuevaClave"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/formulario2"
             android:hint="Correo"
+            android:inputType="textEmailAddress"
             android:paddingLeft="40dp"
             android:textColor="#fff"
             android:textColorHint="#DADADA"
-            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/txtNuevaClave"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
@@ -50,12 +71,23 @@
             android:id="@+id/txtNuevaClave"
             android:layout_width="310dp"
             android:layout_height="60dp"
+            android:layout_above="@+id/txtConfimarClave"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/formulario2"
             android:hint="Nueva Clave"
-            android:paddingLeft="40dp"
             android:inputType="textPassword"
+            android:paddingLeft="40dp"
             android:textColor="#fff"
             android:textColorHint="#DADADA"
+            app:layout_constraintBottom_toTopOf="@+id/txtCelularCliente"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.495"
             app:layout_constraintStart_toStartOf="parent"
@@ -63,35 +95,30 @@
 
         </EditText>
 
-        <EditText
-            android:id="@+id/txtConfimarClave"
-            android:layout_width="310dp"
-            android:layout_height="60dp"
-            android:background="@drawable/formulario2"
-            android:hint="Confirmar Clave"
-            android:paddingLeft="40dp"
-            android:inputType="textPassword"
-            android:textColor="#fff"
-            android:textColorHint="#DADADA"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.492"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtNuevaClave">
-
-        </EditText>
-
-
         <Button
             android:id="@+id/btnfoto"
-            android:layout_width="310dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ivfoto"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="57dp"
+            android:layout_marginLeft="57dp"
+            android:layout_marginTop="376dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginBottom="7dp"
             android:background="#ffff"
             android:text="Cargar Foto"
             android:textColor="#151"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintHorizontal_bias="0.653"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtConfimarClave">
+            app:layout_constraintTop_toBottomOf="@+id/txtConfimarClave"
+            app:layout_constraintVertical_bias="0.0">
 
         </Button>
 
@@ -99,7 +126,17 @@
             android:id="@+id/btnGuardar"
             android:layout_width="250dp"
             android:layout_height="70dp"
+            android:layout_above="@+id/desing"
             android:layout_below="@+id/txtPassword"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="80dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginEnd="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginBottom="33dp"
             android:background="@drawable/btn_guardar"
             app:layout_constraintBottom_toTopOf="@+id/desing"
             app:layout_constraintCircleRadius="@android:dimen/app_icon_size"
@@ -113,9 +150,12 @@
             android:id="@+id/desing"
             android:layout_width="420dp"
             android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
             android:background="@drawable/ic_elipse"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.99"
             app:layout_constraintStart_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
@@ -123,16 +163,50 @@
 
         <ImageView
             android:id="@+id/ivfoto"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="128dp"
+            android:layout_height="125dp"
+            android:layout_above="@+id/btnGuardar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="141dp"
+            android:layout_marginLeft="141dp"
+            android:layout_marginEnd="141dp"
+            android:layout_marginRight="141dp"
+            android:layout_marginBottom="10dp"
             app:layout_constraintBottom_toTopOf="@+id/btnGuardar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btnfoto"
-            app:layout_constraintVertical_bias="0.433"
+            app:layout_constraintVertical_bias="0.818"
             app:srcCompat="@drawable/logo_thakhi" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/txtConfimarClave"
+            android:layout_width="310dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/btnGuardar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginBottom="219dp"
+            android:background="@drawable/formulario2"
+            android:hint="Confirmar Clave"
+            android:inputType="textPassword"
+            android:paddingLeft="40dp"
+            android:textColor="#fff"
+            android:textColorHint="#DADADA"
+            app:layout_constraintTop_toBottomOf="@+id/txtNuevaClave">
+
+        </EditText>
+
+    </RelativeLayout>
 
 </ScrollView>

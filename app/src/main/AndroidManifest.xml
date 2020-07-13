@@ -53,15 +53,17 @@
         <activity android:name=".Controller.CalificacionController" />
         <activity android:name=".Controller.ClienteController" />
         <activity android:name=".Controller.RegistroController" >
+
+        </activity>
+        <activity android:name=".Controller.UbicacionController" />
+        <activity android:name=".Controller.LoginController"></activity>
+        <activity android:name=".Controller.SplashController">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Controller.UbicacionController" />
-        <activity android:name=".Controller.LoginController"></activity>
-        <activity android:name=".Controller.SplashController" />
         <activity android:name=".Controller.MenuController" />
         <activity android:name=".MainActivity" />
     </application>

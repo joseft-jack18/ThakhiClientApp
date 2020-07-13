@@ -6,6 +6,8 @@
     <color name="colorFondoPrincipal">#1A2035</color>
     <color name="colorFondoSecundario">#FFAD46</color>
     <color name="colorCopyright">#FFF</color>
+    <color name="colorText">#B1B1B1</color>
+    <color name="colorBackgroudText">#E9EAEC</color>
 
     <color name="white">#ffffff</color>
     <color name="color1">#dcd9d9</color>
