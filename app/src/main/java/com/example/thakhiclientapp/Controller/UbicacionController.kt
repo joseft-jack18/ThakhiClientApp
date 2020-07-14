@@ -55,15 +55,15 @@ class UbicacionController : AppCompatActivity(), OnMapReadyCallback, GoogleMap.O
         btnUbicacion.setOnClickListener {
             //codigo para guardar la latitud y longitud en la base de datos
             setUpMap()
-            var url = ConexionModel.url + "CapturarUbicacion.php?CLIlatitud=" + lat + "&CLIlongitud=" + lon + "&CLIdni=" + ConexionModel.dniCliente
-            var rq = Volley.newRequestQueue(this)
-            var sr = StringRequest(
-                Request.Method.GET, url,
-                Response.Listener { response ->
-                    Toast.makeText(this,"Se ha enviado su Ubicacion!", Toast.LENGTH_LONG).show()
-                },
-                Response.ErrorListener { })
-            rq.add(sr)
+            //var url = ConexionModel.url + "CapturarUbicacion.php?CLIlatitud=" + lat + "&CLIlongitud=" + lon + "&CLIdni=" + ConexionModel.dniCliente
+            //var rq = Volley.newRequestQueue(this)
+            //var sr = StringRequest(
+                //Request.Method.GET, url,
+               // Response.Listener { response ->
+               //     Toast.makeText(this,"Se ha enviado su Ubicacion!", Toast.LENGTH_LONG).show()
+               // },
+                //Response.ErrorListener { })
+            //rq.add(sr)
         }
     }
 

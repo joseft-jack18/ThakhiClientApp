@@ -28,8 +28,8 @@ class MenuController : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.menu_activity)
 
-        txtDni.text = "DNI N° " + ConexionModel.dniCliente
-        txtNombre.text = ConexionModel.nombreCliente
+        //txtDni.text = "DNI N° " + ConexionModel.dniCliente
+        //txtNombre.text = ConexionModel.nombreCliente
 
         ubicacionCliente.setOnClickListener {
             var i= Intent(this,UbicacionController::class.java)
@@ -47,7 +47,7 @@ class MenuController : AppCompatActivity() {
                         startActivity(i)
                     }
                     if(response=="1"){
-                        ObtenerDatosEntrega(ConexionModel.dniCliente,fechaactual)
+                        //ObtenerDatosEntrega(ConexionModel.dniCliente,fechaactual)
                         var i= Intent(this,AnimationController::class.java)
                         startActivity(i)
                     }
@@ -63,8 +63,8 @@ class MenuController : AppCompatActivity() {
 
         logoutCliente.setOnClickListener {
             Toast.makeText(this,"Cerrando Sesión...", Toast.LENGTH_LONG).show()
-            ConexionModel.dniCliente == ""
-            ConexionModel.nombreCliente == ""
+            //ConexionModel.dniCliente == ""
+            //ConexionModel.nombreCliente == ""
             var i= Intent(this,SplashController::class.java)
             startActivity(i)
         }
