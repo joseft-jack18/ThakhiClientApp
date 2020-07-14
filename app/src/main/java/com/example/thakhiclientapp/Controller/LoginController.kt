@@ -23,7 +23,7 @@ class LoginController : AppCompatActivity() {
 
         btnIngresar.setOnClickListener {
             //cndicion para que no acepte campos vacios
-            while (!(txtCorreo.text.toString().equals("")) || !(txtPassword.text.toString().equals(""))){
+            if (txtCorreo.text.toString() != "" || txtPassword.text.toString() != ""){
                 var url = ConexionModel.url + "Login.php?CLIemail=" + txtCorreo.text.toString() +
                         "&CLIclave=" + txtPassword.text.toString()
                 var rq = Volley.newRequestQueue(this)
@@ -45,8 +45,9 @@ class LoginController : AppCompatActivity() {
                     }
                 )
                 rq.add(sr)
+            } else {
+                Toast.makeText(this,"Debe de llenar los campos requeridos...", Toast.LENGTH_SHORT).show()
             }
-            Toast.makeText(this,"Debe de llenar los campos requeridos...", Toast.LENGTH_SHORT).show()
         }
 
         //boton del registro
